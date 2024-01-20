@@ -1,5 +1,7 @@
 # asm-x86
 
+- [debugger](https://github.com/KRIISHSHARMA/asm-x86/blob/main/README.md#debugger)
+
 - install nasm
 ``` sh
 sudo apt install nasm

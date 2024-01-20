@@ -9,7 +9,7 @@
   
 ![image](https://github.com/KRIISHSHARMA/asm-x86/assets/86760658/83be4af2-185e-4025-a822-8010f3ff84a3)
 
-- syntax :
+- syntax (36):
 ``` sh
  * Arguments:
  * eax  system call number
@@ -22,7 +22,24 @@
  * esp  user stack
  * 0(%esp) arg6
 ```
- 
+
+ - syntax (64) :
+``` sh
+* Registers on entry:
+ * rax  system call number
+ * rcx  return address
+ * r11  saved rflags (note: r11 is callee-clobbered register in C ABI)
+ * rdi  arg0
+ * rsi  arg1
+ * rdx  arg2
+ * r10  arg3 (needs to be moved to rcx to conform to C ABI)
+ * r8   arg4
+ * r9   arg5
+ * (note: r12-r15, rbp, rbx are callee-preserved in C ABI)
+ *
+ * Only called from user space.
+```
+
 - [DOCUMENTATION FOR LINUX](https://github.com/torvalds/linux/blob/master/arch/x86/entry/entry_64_compat.S)
 - [syscall for 32 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_32.tbl)
 - [syscall for 64 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl)

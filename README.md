@@ -26,3 +26,28 @@ ld -m elf_i386 try.o -o try
 ./try
 echo $?
 ```
+
+
+# debugger
+1. open greatest debugger
+``` sh
+gdb hello
+# any file name
+```
+2. choose breakpoint
+``` sh
+b _start
+```
+3. choose layout asm
+```sh
+layout asm
+```
+4. run
+``` sh
+r
+```
+5 . exit
+``` sh
+q
+```
+

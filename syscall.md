@@ -9,6 +9,20 @@
   
 ![image](https://github.com/KRIISHSHARMA/asm-x86/assets/86760658/83be4af2-185e-4025-a822-8010f3ff84a3)
 
-# [DOCUMENTATION FOR LINUX](https://github.com/torvalds/linux/blob/master/arch/x86/entry/entry_64_compat.S)
-# [syscall for 32 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_32.tbl)
-# [syscall for 64 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl)
+- syntax :
+``` sh
+ * Arguments:
+ * eax  system call number
+ * ecx  return address
+ * ebx  arg1
+ * ebp  arg2	(note: not saved in the stack frame, should not be touched)
+ * edx  arg3
+ * esi  arg4
+ * edi  arg5
+ * esp  user stack
+ * 0(%esp) arg6
+```
+ 
+- [DOCUMENTATION FOR LINUX](https://github.com/torvalds/linux/blob/master/arch/x86/entry/entry_64_compat.S)
+- [syscall for 32 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_32.tbl)
+- [syscall for 64 bit registers](https://github.com/torvalds/linux/blob/master/arch/x86/entry/syscalls/syscall_64.tbl)

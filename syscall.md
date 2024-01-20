@@ -9,4 +9,4 @@
   
 ![image](https://github.com/KRIISHSHARMA/asm-x86/assets/86760658/83be4af2-185e-4025-a822-8010f3ff84a3)
 
-[DOCUMENTATION FOR LINUX](https://github.com/torvalds/linux/tree/master)
+[DOCUMENTATION FOR LINUX](https://github.com/torvalds/linux/blob/master/arch/x86/entry/entry_64_compat.S)
